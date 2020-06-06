@@ -14,7 +14,7 @@ function co(gen){
     });
 }
 
-// co函数关键，1，一个自执行的next函数。 2，
+// co函数关键，1，一个自执行的next函数。 2，一个Promise异步
 function co(gen){
     let it = gen();
     return new Promise(function(resolve, reject){
